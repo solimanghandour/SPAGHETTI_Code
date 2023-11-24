@@ -1,0 +1,386 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Poppins:ital,wght@1,400;1,500;1,700&family=Roboto:ital,wght@1,400;1,700&display=swap');
+
+/*================= RESET ================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+} 
+
+
+
+/*================= GENERAL ================*/
+body{
+    font-family: 'Poppins', sans-serif;
+    
+ font-weight: 700;
+}
+
+:root{
+
+    --mian-color-gold-:#ffcc4b;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(font/Poppins-BoldItalic.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(font/Poppins-MediumItalic.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(font/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+
+
+/*================= START PAGE ================*/
+/* start logo */
+nav img {
+    width: 50px;
+    border: #28292c solid 2px;
+    border-radius: 50%;
+    animation-name:rotator;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes rotator{
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+nav a {
+    color: black;
+}
+nav a span{
+    color: var(--mian-color-gold-);
+}
+
+/* end logo */
+.navbar .collapse .navbar-nav .nav-item{
+
+    color:var(--mian-color-gold-);
+    position: relative;
+    transition: 0.3s;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background-color:var(--mian-color-gold-);
+    bottom: -3px;
+    transition: 0.3s;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover:before{
+    width: 100%;
+}
+
+/* END NAVBAR */
+ video{
+    opacity: .7;
+
+ 
+}
+.parents p span{
+    color: var(--mian-color-gold-);
+}
+
+.row .container h2 {
+    color: var(--mian-color-gold-);
+    border-top: #28292c solid 5px ;
+    
+}
+  
+  .dark {
+    background-color: black;
+    color: white;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .fa-adjust {
+    margin-right: 5px;
+    
+  }
+  .toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+    left: 40%;
+
+  }
+ 
+  
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+  }
+  
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+    
+  #logoo img {
+    width: 50px;
+    border: #28292c solid 2px;
+    border-radius: 50%;
+    animation-name:rotator;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 20px;
+
+  }
+  @keyframes rotator{
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    #page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      
+      #h3 {
+        color: rgb(4, 4, 4);
+      }
+      
+      #ring {
+        width: 190px;
+        height: 190px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        position: absolute;
+      }
+      
+      #ring:nth-child(1) {
+        border-bottom: 8px solid rgb(255, 141, 249);
+        animation: rotate1 2s linear infinite;
+      }
+      
+      @keyframes rotate1 {
+        from {
+          transform: rotateX(50deg) rotateZ(110deg);
+        }
+      
+        to {
+          transform: rotateX(50deg) rotateZ(470deg);
+        }
+      }
+      
+      #ring:nth-child(2) {
+        border-bottom: 8px solid rgb(255,65,106);
+        animation: rotate2 2s linear infinite;
+      }
+      
+      @keyframes rotate2 {
+        from {
+          transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+        }
+      
+        to {
+          transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+        }
+      }
+      
+      #ring:nth-child(3) {
+        border-bottom: 8px solid rgb(0,255,255);
+        animation: rotate3 2s linear infinite;
+      }
+      
+      @keyframes rotate3 {
+        from {
+          transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+        }
+      
+        to {
+          transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+        }
+      }
+      
+      #ring:nth-child(4) {
+        border-bottom: 8px solid rgb(252, 183, 55);
+        animation: rotate4 2s linear infinite;
+      }
+      
+      @keyframes rotate4 {
+        from {
+          transform: rotateX(70deg) rotateZ(270deg);
+        }
+      
+        to {
+          transform: rotateX(70deg) rotateZ(630deg);
+        }
+      }
+    
+      .uiverse .page{
+        align-items: center;
+        height: 50vh;
+      }
+
+      /*  */
+   
+      .parent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .child {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease-in-out;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+      
+      .child:hover {
+        background-color: white;
+        background-position: -100px 100px, -100px 100px;
+        transform: rotate3d(0.5, 1, 0, 30deg);
+        transform: perspective(180px) rotateX(60deg) translateY(2px);
+        box-shadow: 0px 10px 10px rgb(1, 49, 182);
+      }
+      
+      button {
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+      }
+      
+      .button:hover {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+        border-radius: 50%;
+      }
+    /* ////////// */
+    .parents .portfolio {
+        font-size: 8rem;
+    }
+    .parents .portfolio span img{
+        width: 100%;
+    }
+    .parents .SPAGHETTI{
+        font-size: 5rem;
+    }
+/*================= MIDAE ================*/
+
+@media (max-width:650px){
+ .parents .portfolio {
+    font-size:3rem;
+    
+ }
+ .parents .portfolio span img {
+    width: 30px;
+ }
+
+ .parents .SPAGHETTI{
+    font-size:3rem;
+ }
+}
