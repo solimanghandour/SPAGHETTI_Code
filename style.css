@@ -19,11 +19,14 @@ body{
     font-family: 'Poppins', sans-serif;
     
  font-weight: 700;
+ 
 }
 
 :root{
 
-    --mian-color-gold-:#ffcc4b;
+    --mian-color-green:#26d76e;
+    --mian-color-darkblue-:#0c0a3c;
+
 }
 
 @font-face {
@@ -76,7 +79,7 @@ nav a {
     color: black;
 }
 nav a span{
-    color: var(--mian-color-gold-);
+    color: var(--mian-color-green);
 }
 
 /* end logo */
@@ -106,14 +109,25 @@ nav a span{
 
  
 }
+.about h2{
+  background-color: #26d76e ;
+}
+.about span{
+  background-color: #0c0a3c;
+  color: white;
+}
 .parents p span{
-    color: var(--mian-color-gold-);
+    color: var(--mian-color-green);
 }
 
-.row .container h2 {
-    color: var(--mian-color-gold-);
-    border-top: #28292c solid 5px ;
+.card-group .card h2 {
+    color: var(--mian-color-green);
     
+}
+.card-group  .card .card-body p  #span{
+  background-color:var(--mian-color-darkblue-);
+  color: white;
+  /* -------------------------------------------------------------------- */
 }
   
   .dark {
@@ -381,6 +395,7 @@ nav a span{
  }
 
  .parents .SPAGHETTI{
-    font-size:3rem;
+    font-size:2rem;
+    margin: 20px;
  }
 }
